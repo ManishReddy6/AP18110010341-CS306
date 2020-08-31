@@ -1,0 +1,46 @@
+ 
+ int : keyword 
+ main : identifier
+(
+)
+{ 
+ int : keyword 
+ a : identifier 
+1522: number
+. 
+2: number
+,
+ b : identifier 
+14558: number
+; 
+ char : keyword 
+ a : identifier
+[
+]
+'
+ a : identifier
+'
+; 
+ int : keyword 
+ c : identifier 
+14: number
+; 
+ if : keyword 
+(
+ a : identifier
+>=: Greater than or Equal To 
+0: number
+&
+&
+ c : identifier
+!=: Not Equal To 
+0: number
+&
+&
+ b : identifier
+==: Equal To 
+0: number
+)
+{
+}
+}
