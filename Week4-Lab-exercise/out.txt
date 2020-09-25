@@ -1,0 +1,36 @@
+ 
+ int is keyword  
+ main is keyword()
+{
+    
+ int is keyword 
+ a is identifier,
+ j is identifier,
+ i is identifier;
+   
+ a is identifier
+ = is Assignment Operator Equal to
+ -2.44445 is signed float;
+   
+    
+ for is keyword(
+ i is identifier
+ = is Assignment Operator Equal to
+ 0 is unsigned num;
+ i is identifier
+ <= is Relational operator Lessthan or Equal to
+ a is identifier;
+ i is identifier++)
+{
+   
+   
+ a is identifier
+ = is Assignment Operator Equal to
+ a is identifier+
+ 1 is unsigned num;
+   
+ j is identifier
+ = is Assignment Operator Equal to
+ -2 is signed num
+}
+}

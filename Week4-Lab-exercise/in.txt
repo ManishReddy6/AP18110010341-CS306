@@ -1,0 +1,13 @@
+int main()
+{
+   int a,j,i;
+   a=-2.44445;
+   /*this is
+      a program*/
+   for(i=0;i<=a;i++)
+{
+   //for loop
+   a=a+1;
+   j=-2
+}
+}
