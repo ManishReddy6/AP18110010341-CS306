@@ -1,8 +1,8 @@
 digit [0-9]*
 id [a-zA-Z][a-zA-Z0-9]*
-signed_num [-][0-9]*
+signed_num [=+][0-9]*|[=-][0-9]*
 unsigned_float digit*\.digit*
-signed_float [-][0-9]*\.[0-9]*
+signed_float [=+][0-9]*\.[0-9]*|[=-][0-9]*\.[0-9]*
 %{
 #include<stdio.h>
 #include<string.h>
