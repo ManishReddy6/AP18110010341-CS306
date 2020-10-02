@@ -1,8 +1,9 @@
 digit [0-9]*
 id [a-zA-Z][a-zA-Z0-9]*
-signed_num [=+][0-9]*|[=-][0-9]*
+signed_num [+-]?[0-9]*
 unsigned_float digit*\.digit*
-signed_float [=+][0-9]*\.[0-9]*|[=-][0-9]*\.[0-9]*
+signed_float [+-]?[0-9]*\.[0-9]*
+exp {digit}[e]{digit}
 %{
 #include<stdio.h>
 #include<string.h>
@@ -27,8 +28,9 @@ while |
 main {fprintf(ofp," \n %s is keyword",yytext);}
 {digit} {fprintf(ofp,"\n %s is unsigned num",yytext);}
 {signed_num} { fprintf(ofp,"\n %s is signed num",yytext);}
-{unsigned_float} {fprintf(ofp,"\n %s is unsigned float",yytext);}
-{signed_float} { fprintf(ofp,"\n %s is signed float",yytext);}
+{unsigned_float} {fprintf(ofp,"\n %s is unsigned fractional float",yytext);}
+{signed_float} { fprintf(ofp,"\n %s is signed fractional float",yytext);}
+{exp}	   {fprintf(yyout,"%s: exponential float\n",yytext)};
 {id} { fprintf(ofp,"\n %s is identifier",yytext);
 if(!look_up(st,yytext,i))
 strcpy(st[i++],yytext);cnt++;
