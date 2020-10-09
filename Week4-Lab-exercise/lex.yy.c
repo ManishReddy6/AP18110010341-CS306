@@ -414,9 +414,9 @@ static char *yy_last_accepting_cpos;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "sym.l"
+#line 1 "lexical_recognizer.l"
 #define INITIAL 0
-#line 7 "sym.l"
+#line 7 "lexical_recognizer.l"
 #include<stdio.h>
 #include<string.h>
 int i=0,j=0,cnt=0,n=0,com=0,scom=0;
@@ -574,7 +574,7 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
 
-#line 14 "sym.l"
+#line 14 "lexical_recognizer.l"
 
 #line 580 "lex.yy.c"
 
@@ -661,62 +661,62 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 15 "sym.l"
+#line 15 "lexical_recognizer.l"
 
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 16 "sym.l"
+#line 16 "lexical_recognizer.l"
 
 	YY_BREAK
 case 3:
-#line 18 "sym.l"
+#line 18 "lexical_recognizer.l"
 case 4:
-#line 19 "sym.l"
+#line 19 "lexical_recognizer.l"
 case 5:
-#line 20 "sym.l"
+#line 20 "lexical_recognizer.l"
 case 6:
-#line 21 "sym.l"
+#line 21 "lexical_recognizer.l"
 case 7:
-#line 22 "sym.l"
+#line 22 "lexical_recognizer.l"
 case 8:
-#line 23 "sym.l"
+#line 23 "lexical_recognizer.l"
 case 9:
-#line 24 "sym.l"
+#line 24 "lexical_recognizer.l"
 case 10:
-#line 25 "sym.l"
+#line 25 "lexical_recognizer.l"
 case 11:
-#line 26 "sym.l"
+#line 26 "lexical_recognizer.l"
 case 12:
-#line 27 "sym.l"
+#line 27 "lexical_recognizer.l"
 case 13:
 YY_RULE_SETUP
-#line 27 "sym.l"
+#line 27 "lexical_recognizer.l"
 {fprintf(ofp," \n %s is keyword",yytext);}
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 28 "sym.l"
+#line 28 "lexical_recognizer.l"
 {fprintf(ofp,"\n %s is unsigned num",yytext);}
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 29 "sym.l"
+#line 29 "lexical_recognizer.l"
 { fprintf(ofp,"\n %s is signed num",yytext);}
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 30 "sym.l"
+#line 30 "lexical_recognizer.l"
 {fprintf(ofp,"\n %s is unsigned float",yytext);}
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 31 "sym.l"
+#line 31 "lexical_recognizer.l"
 { fprintf(ofp,"\n %s is signed float",yytext);}
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 32 "sym.l"
+#line 32 "lexical_recognizer.l"
 { fprintf(ofp,"\n %s is identifier",yytext);
 if(!look_up(st,yytext,i))
 strcpy(st[i++],yytext);cnt++;
@@ -724,42 +724,42 @@ strcpy(st[i++],yytext);cnt++;
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 36 "sym.l"
+#line 36 "lexical_recognizer.l"
 {fprintf(ofp,"\n %s is Relational operator Lessthan or Equal to",yytext);}
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 37 "sym.l"
+#line 37 "lexical_recognizer.l"
 {fprintf(ofp, "\n %s is Relational operator Lessthan",yytext);}
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 38 "sym.l"
+#line 38 "lexical_recognizer.l"
 {fprintf(ofp,"\n %s is Relational operator Greaterthan or Equal to",yytext);}
 	YY_BREAK
 case 22:
 YY_RULE_SETUP
-#line 39 "sym.l"
+#line 39 "lexical_recognizer.l"
 { fprintf(ofp,"\n %s is Relational operator Greaterthan",yytext);}
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 40 "sym.l"
+#line 40 "lexical_recognizer.l"
 { fprintf(ofp,"\n %s is Relational operator Equal to",yytext);}
 	YY_BREAK
 case 24:
 YY_RULE_SETUP
-#line 41 "sym.l"
+#line 41 "lexical_recognizer.l"
 { fprintf(ofp,"\n %s is Relational operator Not Equal to",yytext);}
 	YY_BREAK
 case 25:
 YY_RULE_SETUP
-#line 42 "sym.l"
+#line 42 "lexical_recognizer.l"
 { fprintf(ofp,"\n %s is Assignment Operator Equal to",yytext);}
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
-#line 43 "sym.l"
+#line 43 "lexical_recognizer.l"
 ECHO;
 	YY_BREAK
 #line 766 "lex.yy.c"
@@ -1648,7 +1648,7 @@ int main()
 	return 0;
 	}
 #endif
-#line 43 "sym.l"
+#line 43 "lexical_recognizer.l"
 
 main()
 {

@@ -2,6 +2,8 @@
  int is keyword  
  main is keyword()
 {
+
+ -3 is signed num
     
  int is keyword 
  a is identifier,
@@ -11,6 +13,10 @@
  a is identifier
  = is Assignment Operator Equal to
  -2.44445 is signed float;
+   
+ i is identifier
+ = is Assignment Operator Equal to+
+ 2 is unsigned num
    
     
  for is keyword(
