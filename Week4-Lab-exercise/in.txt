@@ -1,9 +1,8 @@
 int main()
 {
--3
    int a,j,i;
    a=-2.44445;
-   i=+2
+   i=2;
    /*this is
       a program*/
    for(i=0;i<=a;i++)
