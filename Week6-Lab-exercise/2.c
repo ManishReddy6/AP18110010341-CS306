@@ -1,6 +1,6 @@
 /*
 2.  G = ({S, L}, {(, ), a, ,}, {S → (L) | a ; L→ L, S | S}, S)
-after removing left recursion manually, 
+after removing left recursion manually,
 S->(L);
 L->SL';
 L'->,SL'|?   // ? is epsilon
@@ -49,7 +49,7 @@ int S()
         ip++;
         printf("%s\tS->a \n",ip);
         return 1;
-    }   
+    }
     else
         return 0;
 }
